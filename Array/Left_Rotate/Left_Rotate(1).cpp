@@ -1,6 +1,7 @@
+// Write a function rotate(ar[], d, n) that rotates arr[] of size n by 1 element ................................ 
+
 #include <iostream>
 using namespace std;
-
 
 int main()
 {
