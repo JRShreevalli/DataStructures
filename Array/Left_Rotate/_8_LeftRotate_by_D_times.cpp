@@ -1,3 +1,5 @@
+// Write a function Left_Rot(ar[], d, n) that rotates arr[] of size n by d elements......................
+
 #include <iostream>
 using namespace std ;
 
