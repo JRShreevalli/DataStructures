@@ -39,11 +39,20 @@ int main()
 return 0;  
 }
 
-void push()
-{  
+bool isFull( int top )
+{
     if(top >= n-1)           // OVERFLOW CONDITION //
     {
-      cout<<"STACK IS OVERFLOW"<<endl;
+      return true ;
+    }
+    return false ;
+}
+
+void push()
+{  
+    if ( isFull(top) == true )
+    {
+      cout << "Stack is Full \n" ;
     }
     else
     {
@@ -54,11 +63,19 @@ void push()
     }
 }
 
-void pop()
+bool isNull(int top)
 {
   if(top <= -1)         // Underflow COndition 
   {
-    cout << "STACK IS UNDERFLOW" << endl;
+    return true ;
+  }
+  return false ;
+}
+void pop()
+{
+  if( isNull(top) == true )
+  {
+      cout << "STACK IS UNDERFLOW" << endl;
   }
   else
   {
